@@ -57,7 +57,7 @@ def parse_args(argv):
 
 
 def parse_tag(t):
-    m = re.match(r'^([^-]*)-(.*)$', t)
+    m = re.match(r'^([^-]*)_(.*)$', t)
     return m.groups() if m else (t, '')
 
 

@@ -43,5 +43,9 @@ if __name__ == '__main__':
     """
     如果想训练，那么直接 指定参数跑，如果想启动服务，那么注释掉train,打开server即可
     """
+    # import os
+    #
+    #
+    # print(os.getcwd())  # 获得当前工作目录
     train_ner()
     #start_server()

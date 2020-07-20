@@ -35,7 +35,7 @@ def get_args_parser():
                         help='')
 
     group2 = parser.add_argument_group('Model Config', 'config the model params')
-    group2.add_argument('-max_seq_length', type=int, default=202,
+    group2.add_argument('-max_seq_length', type=int, default=128,
                         help='The maximum total input sequence length after WordPiece tokenization.')
     group2.add_argument('-do_train', action='store_false', default=True,
                         help='Whether to run training.')
@@ -43,9 +43,9 @@ def get_args_parser():
                         help='Whether to run eval on the dev set.')
     group2.add_argument('-do_predict', action='store_false', default=True,
                         help='Whether to run the predict in inference mode on the test set.')
-    group2.add_argument('-batch_size', type=int, default=64,
+    group2.add_argument('-batch_size', type=int, default=8,
                         help='Total batch size for training, eval and predict.')
-    group2.add_argument('-learning_rate', type=float, default=1e-5,
+    group2.add_argument('-learning_rate', type=float, default=2e-5,
                         help='The initial learning rate for Adam.')
     group2.add_argument('-num_train_epochs', type=float, default=10,
                         help='Total number of training epochs to perform.')
