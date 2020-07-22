@@ -23,7 +23,6 @@ def start_server():
     server.start()
     server.join()
 
-
 def train_ner():
     import os
     from bert_base.train.train_helper import get_args_parser
